@@ -1,6 +1,6 @@
 'use client'
 
-import { Box, Button, Stack, TextField } from '@mui/material'
+import { Box, Button, Stack, TextField, Typography } from '@mui/material'
 import { useState, useRef, useEffect } from 'react'
 
 export default function Home() {
@@ -122,7 +122,9 @@ export default function Home() {
                 borderRadius={16}
                 p={3}
               >
+                <Typography>
                 {message.content}
+                </Typography>
               </Box>
             </Box>
           ))}
