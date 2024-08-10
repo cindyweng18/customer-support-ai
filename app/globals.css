@@ -50,28 +50,70 @@ body {
 }
 
 .hero {
-  position: relative;
-  width: 100;
+  width: 100%;
   height: 100vh;
   overflow: hidden;
-  background-image:url(/images/homepage.jpeg)
+  background-image:url(/images/homepage.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 100px; /* Adjust this to position your text */
+  color: rgb(0, 0, 0);
+  font-size: 50px;
+  
 }
 
-.hero img {
+.slogan{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.tea {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tea > *{
+  padding: 10px;
+}
+
+.teaSelections{
   width: 100%;
-  height: 10;
-  object-fit: cover;
+  display: flex;
+  justify-content:space-around;
 }
 
-.hero-content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 16px;
+.teaSelections > *{
+  height: 500px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: white;
-  background: rgba(0, 0, 0, 0.5);
 }
 
-.container {
-  padding: 16px;
+.milk-tea {
+  background-image: url('/images/milk-tea.jpeg');
+  background-size: cover;
 }
+
+.slush-serie {
+  background-image: url('/images/slush.jpeg');
+  background-size: cover;
+}
+
+.tea-latte {
+  background-image: url('/images/latte.jpeg');
+  background-size: cover;
+}
+
+
+

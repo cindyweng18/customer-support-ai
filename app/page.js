@@ -21,8 +21,11 @@ export default function HomePage() {
 
       {/* Hero Section */}
       <div className="hero">
-        <h1>Welcome to Our Website</h1>
-        <p>Discover the best boba tea flavors and more.</p>
+        <div className="slogan">
+          <p>Grab a Broski</p>
+          <p>Cause You're Gonna</p>
+          <p>Wanna Share!</p>
+        </div>
       </div>
 
       {/* Content Section */}
