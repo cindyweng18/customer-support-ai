@@ -30,6 +30,7 @@
   .logo{
     margin-left: 20px;
     width: 90%;
+    cursor:  pointer;
   }
   
   .options{
@@ -50,6 +51,7 @@
   .options .menu{
     font-family: American Typewriter, serif;
     font-weight: normal;
+    cursor:  pointer;
   }
   
   
@@ -68,6 +70,7 @@
     background-color: rgb(159, 12, 31);
     color: white;
     border-style: none;
+    
   }
 
   .chat:hover{
@@ -128,6 +131,7 @@
 
   .teaSelections > * > h2{
     font-size: 30px;
+    cursor: pointer;
   }
 
   .teaSelections > * > h2:hover{
