@@ -26,7 +26,7 @@ export default function Login() {
       <div className="header">
         <Link href="homepage"><h1 className="logo">Boba Broskis</h1></Link>
       </div>
-      <div class="wrapper">
+      <div className="wrapper">
       <div className="container">
         <h2 className="title">Login</h2>
         <form onSubmit={handleSubmit} className="formBox">

@@ -1,5 +1,6 @@
 import './styles/homepage.css';
 import Link from 'next/link';
+import React from 'react';
 
 export default function HomePage() {
     const handleScroll = (e) => {

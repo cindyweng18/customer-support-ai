@@ -29,7 +29,7 @@ export default function Register() {
       <div className="header">
         <Link href="homepage"><h1 className="logo">Boba Broskis</h1></Link>
       </div>
-      <div class="wrapper">
+      <div className="wrapper">
         <div className="container">
           <h2 className="title">Register</h2>
           <form onSubmit={handleSubmit} className="formBox">
