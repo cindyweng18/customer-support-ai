@@ -1,7 +1,7 @@
 import "./styles/loginRegister.css";
+import Link from "next/link";
 import { useState } from "react";
 import axios from "../utils/axios";
-import Link from "next/link";
 
 export default function Register() {
   const [username, setUsername] = useState("");

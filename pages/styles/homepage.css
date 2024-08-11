@@ -53,10 +53,14 @@
     font-weight: normal;
     cursor:  pointer;
   }
-  
-  
+
   .options .menu:hover {
     color:  rgb(159, 12, 31);
+  }
+
+  a{
+    text-decoration: none;
+    color: inherit;
   }
   
   .chat{

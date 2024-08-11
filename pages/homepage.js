@@ -2,6 +2,13 @@ import './styles/homepage.css';
 import Link from 'next/link';
 
 export default function HomePage() {
+    const handleScroll = (e) => {
+        e.preventDefault();
+        const target = document.querySelector('#tea');
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      };
   return (
     <div>
         {/* Header Section */}
@@ -9,7 +16,10 @@ export default function HomePage() {
         <div className="header">
           <h1 className="logo">Boba Broskis</h1>
           <div className="options">
-            <h3 className="menu" >↓ Menu ↓</h3>
+            <Link href="#tea" onClick={handleScroll}>
+                <h3 className="menu" >↓ Menu ↓</h3>
+            </Link>
+            
             <Link href='/login'>
                 <button className="chat">Chat with Us</button>
             </Link>
@@ -28,7 +38,7 @@ export default function HomePage() {
       </div>
 
       {/* Content Section */}
-      <div className="tea">
+      <div id='tea' className="tea">
         <h1>Menu</h1>
         <p>
           We offer a wide range of delicious boba tea flavors. Explore our menu
