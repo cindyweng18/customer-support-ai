@@ -1,4 +1,5 @@
 import './styles/homepage.css';
+import Link from 'next/link';
 
 export default function HomePage() {
   return (
@@ -9,7 +10,10 @@ export default function HomePage() {
           <h1 className="logo">Boba Broskis</h1>
           <div className="options">
             <h3 className="menu" >↓ Menu ↓</h3>
-            <button className="chat"> <a href=''>Chat with Us</a></button>
+            <Link href='/login'>
+                <button className="chat">Chat with Us</button>
+            </Link>
+            
           </div>
         </div>
 
