@@ -1,18 +1,14 @@
-'use client'
-import { createTheme, ThemeProvider } from "@mui/material";
-import theme from "./theme";
+// app/layout.js
 
-const newTheme = createTheme(theme)
+import React from 'react';
+import './globals.css'; // Import global styles
 
 export default function RootLayout({ children }) {
   return (
-    <ThemeProvider theme={newTheme}>
-      <html lang="en">
-        <head> 
-          <title>AI Chatbot</title>
-        </head>
-        <body>{children}</body>
-      </html>
-    </ThemeProvider>
+    <html lang="en">
+      <body>
+        {children}
+      </body>
+    </html>
   );
 }
