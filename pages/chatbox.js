@@ -8,7 +8,7 @@ export default function Home() {
     {
       role: "assistant",
       content:
-        "Hi! I'm the Headstarter support assistant. How can I help you today?",
+        "Hi! I'm the Boba Broski support assistant. How can I help you today?",
     },
   ]);
   const [message, setMessage] = useState("");
@@ -147,8 +147,8 @@ export default function Home() {
               <Box
                 bgcolor={
                   message.role === "assistant"
-                    ? "primary.main"
-                    : "secondary.main"
+                    ? "#B17D6C"
+                    : "#A2B068"
                 }
                 color="white"
                 borderRadius={16}
@@ -173,6 +173,12 @@ export default function Home() {
             variant="contained"
             onClick={sendMessage}
             disabled={isLoading}
+            sx={{
+              backgroundColor: '#A2B068', // Custom background color
+              '&:hover': {
+                backgroundColor: '#B17D6C', // Custom hover color
+              },
+            }}
           >
             {isLoading ? "Sending..." : "Send"}
           </Button>

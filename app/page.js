@@ -1,30 +1,35 @@
-import './styles/homepage.css';
-import Link from 'next/link';
-import React from 'react';
+"use clinet";
+
+import "../pages/styles/homepage.css";
+// import InteractiveLink from './components/InteractiveLink'; // Import the Client Component
+import Link from "next/link";
+import React from "react";
 
 export default function HomePage() {
-    const handleScroll = (e) => {
-        e.preventDefault();
-        const target = document.querySelector('#tea');
-        if (target) {
-          target.scrollIntoView({ behavior: 'smooth' });
-        }
-      };
+  /*
+  const handleScroll = (e) => {
+    e.preventDefault();
+    const target = document.querySelector("#tea");
+    if (target) {
+      target.scrollIntoView({ behavior: "smooth" });
+    }
+  };*/
   return (
     <div>
-        {/* Header Section */}
+      {/* Header Section */}
       <div className="landing">
         <div className="header">
           <h1 className="logo">Boba Broskis</h1>
           <div className="options">
-            <Link href="#tea" onClick={handleScroll}>
-                <h3 className="menu" >↓ Menu ↓</h3>
+            <div >
+              <Link href="#tea">
+                <h3 className="menu">↓ Menu ↓</h3>
+              </Link>
+            </div>
+
+            <Link href="/chatbox">
+              <button className="chat">Chat with Us</button>
             </Link>
-            
-            <Link href='/login'>
-                <button className="chat">Chat with Us</button>
-            </Link>
-            
           </div>
         </div>
 
@@ -39,11 +44,12 @@ export default function HomePage() {
       </div>
 
       {/* Content Section */}
-      <div id='tea' className="tea">
+      <div id="tea" className="tea">
         <h1>Menu</h1>
         <p>
           We offer a wide range of delicious boba tea flavors. Explore our menu
-          and find your favorite drink! Have questions? Chat with our AI employee!
+          and find your favorite drink! Have questions? Chat with our AI
+          employee!
         </p>
         <div className="teaSelections">
           <div className="milk-tea">
@@ -60,5 +66,3 @@ export default function HomePage() {
     </div>
   );
 }
-
-
