@@ -4,10 +4,12 @@ Demo: https://boba-chatbox.vercel.app/
 
 ## Team
 Cindy Browning
-Janira Gayle
-Emely Guerrero
-Emily Zhu
 
+Janira Gayle
+
+Emely Guerrero
+
+Emily Zhu
 ## Getting Started
 
 First, run the development server:
