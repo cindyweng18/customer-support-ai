@@ -1,4 +1,8 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Boba Broskis
+Your next step to knowing more about your favorite boba drinks! With the help of our AI chatbot, you can interact with it to learn more about bobas, yum!
+
+## Technical
+This project was done with NextJS, Firebase, MaterialUI, Meta's LlaMa AI API, and deployed with Vercel.
 
 Demo: https://boba-chatbox.vercel.app/
 
